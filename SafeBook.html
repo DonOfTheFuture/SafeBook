@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+<!--
+
+Copyright (c) 2021 by DRHIII
+
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SAFEBOOK</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html{
+background-color: white;
+}
+#BD{
+   border: solid 1px black;
+   margin: auto;
+   width: 80%;
+     height: 50px;
+   text-align: center;
+   display: inline;
+}
+#BD > button{
+  width: 27%;
+
+  border: solid 1px white;
+  background: linear-gradient(white, snow, white)
+}
+@media screen and (max-width: 1400px){
+
+body{
+  border: solid 5px black;
+    width: 800px;
+  height: 90%;
+  margin:auto;
+  position: relative;
+  
+}
+
+#vidDiv{
+  position: relative;
+  border: solid 5px black;
+  margin: auto;
+ width: 758.5px;
+   height: 426.5px;
+}
+#vidDiv > video{
+ width:758.5px;
+   height: 425.5px;  
+   border: solid .5px black;
+}
+#vidDiv > div{
+  position: absolute;
+  z-index: 1;
+  border: 1px solid red;
+  height: 150px;
+  width:150px;
+  margin: auto;
+  right: 375px;
+  top:120px;
+}
+#can2Div > input{
+  width: 180px;
+}
+
+
+#pd{
+  display: none;
+}
+#canDiv{
+   display: grid;
+   grid-template-columns: auto auto;
+   width: 610px;
+   height 270px;
+   margin: auto;
+   border: solid .5px black;
+}
+#canDiv > div{
+   text-align:center;
+   display: inline-block;
+   height: 200px;
+   width: 300px;
+   margin:auto;
+   float: center;
+   margin-top: 0px;
+   border: solid .5px black;
+}
+#canDiv>div>input{
+   text-align:center;
+   position: relative;
+   top: 22px;
+}
+#can2Div>button{
+    text-align:center;
+   position: relative;
+   top: 22px;
+}
+#canDiv> div> canvas{
+  position: relative;
+
+  width: 300px;
+  height: 170px;
+  margin: auto;
+   display: inline-block;
+   margin-bottom: 0px;
+   border: solid 1px black;
+}
+#canDiv > div > button, input{
+   
+}
+#img-sec{
+  position: relative;
+  border: solid .5px black;
+  height: 200px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+background-color: lightgray;
+  
+}
+#img-sec > div{
+  display: inline;
+  border:solid .5px black;
+width: 300px;
+  margin-left: 10px;
+  left: 5px;
+   background-color: silver;
+   text-align:center;
+}
+#img-div > h2{
+  text-align: center;
+  position: relative;
+  margin: 0px;
+  
+}
+#img-div > p{
+  display: inline;
+  position: relative;
+  bottom: 65px;
+}
+img-div > img{
+  height: 170px;
+  width: 300px;
+  display: none;
+}
+#img-div > canvas {
+  width: 300px;
+  height: 170px;
+   margin-bottom:-25px;
+}
+#img-div > button{
+   margin-top: 0px;
+}
+#soundDiv{
+  border: solid .5px black;
+  height: 100px;
+}
+#nb{
+  width: 100%;
+  height: 300px;
+}
+#header{
+ border: solid black 1px;
+ text-align: center;
+  height: 70px;
+}
+#header > h2{
+   line-height: 0px;
+  font-family: Arial;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 30px;
+ 
+}
+#header > button{
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  position: relative;
+ top: 4px;
+  border-radius: 25px;
+  border: solid gray 1px;
+}
+#nav{ 
+  text-align: left;
+    position: relative;
+  top: -15px;
+  border: solid .5px black;
+  height: 53px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+background-color: lightgray;
+}
+#nav > button{
+  height: 55px;
+  font-size: 30px;
+  color: white;
+  position: relative;
+  padding: 5px;
+top: -2px;
+  display: none;
+}
+#note{
+  display: none;
+  width: 100%;
+  border: solid black 1px;
+  text-align: center;
+  position: relative;
+  top: 55px;
+}
+#note > div{
+  position: relative;
+  border: solid 1px black;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+ #note > div>h2{
+  position: relative;
+font-family: arial;
+   display: inline;
+   height: 30px;
+   font-size: 30px;
+ 
+}
+ #note > div> button{
+   position: relative;
+  background-color: white;
+  border: solid 1px gray;
+  height: 40px;
+  width: 40px;
+   border-radius: 20px;
+   left: 0px;
+   bottom: -4px;
+  font-size: 20px;
+ right: 215px;
+}
+#note >  textarea{
+  width: 100%;
+  height: 395px;
+ color: black;
+  font-size: 20px;
+  resize: none;
+   position: relative;
+   right: 5.5px;
+   border: solid 2px black;
+   margin-top: -80px;
+}
+#note > button{
+   height: 20px;
+      width: 19%;
+}
+#note > #text-set{
+   position: relative;
+
+}
+#text-set > input[type=range]{
+   width: 40%;
+}
+}
+@media screen and (min-width:1400px){
+body{
+  border: solid 5px black;
+    width:1100px;
+  height: 90%;
+  margin:auto;
+  position: relative;
+  
+}
+
+#vidDiv{
+  position: relative;
+  border: solid 5px black;
+  margin: auto;
+ width: 758.5px;
+   height: 426.5px;
+  display: inline-block;
+}
+#vidDiv > video{
+ width:758.5px;
+   height: 425.5px;  
+   border: solid .5px black;
+}
+#vidDiv > div{
+  position: absolute;
+  z-index: 1;
+  border: 1px solid red;
+  height: 150px;
+  width:150px;
+  margin: auto;
+  right: 335px;
+  bottom:125px;
+}
+#can2Div > input{
+  width: 180px;
+}
+
+
+#pd{
+  display: none;
+}
+#canDiv{
+  position: relative;
+   display: grid;
+   grid-template-columns: auto;
+   border: solid .5px black;
+  float:left;
+}
+#canDiv > div{
+   text-align:center;
+   display: inline-block;
+   height: 200px;
+   width: 300px;
+   margin:auto;
+   float: center;
+   margin-top: 0px;
+   border: solid .5px black;
+}
+#canDiv>div>input{
+   text-align:center;
+   position: relative;
+   top: 22px;
+}
+#canDiv>input[type=range]{
+	top: 5px;
+	width: 100%;
+}
+#can2Div>button{
+    text-align:center;
+   position: relative;
+   top: 22px;
+
+}
+#canDiv> div> canvas{
+  position: relative;
+
+  width: 300px;
+  height: 170px;
+  margin: auto;
+   display: inline-block;
+   margin-bottom: 0px;
+   border: solid 1px black;
+}
+#canDiv > div > button, input{
+   
+}
+#img-sec{
+  position: relative;
+  border: solid .5px black;
+  height: 220px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+background-color: lightgray;
+  
+}
+#img-sec > div{
+  display: inline;
+  border:solid .5px black;
+width: 300px;
+  margin-left: 10px;
+   background-color: silver;
+   text-align:center;
+}
+#img-div > h2{
+  text-align: center;
+  position: relative;
+  margin: 0px;
+  
+}
+#img-div > p{
+  display: inline;
+  position: relative;
+  bottom: 65px;
+}
+img-div > img{
+  height: 170px;
+  width: 300px;
+  display: none;
+}
+#img-div > canvas {
+  width: 300px;
+  height: 170px;
+   margin-bottom:-25px;
+}
+#img-div > button{
+   margin-top: 0px;
+}
+#soundDiv{
+  border: solid .5px black;
+  height: 100px;
+}
+#nb{
+  width: 100%;
+  height: 110px;
+}
+#header{
+ border: solid black 1px;
+ text-align: center;
+  height: 70px;
+}
+#header > h2{
+   line-height: 0px;
+  font-family: Arial;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 30px;
+ 
+}
+#header > button{
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  position: relative;
+ top: 4px;
+  border-radius: 25px;
+  border: solid gray 1px;
+}
+#nav{ 
+  text-align: left;
+    position: relative;
+  top: -15px;
+  border: solid .5px black;
+  height: 53px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+background-color: lightgray;
+}
+#nav > button{
+  height: 55px;
+  font-size: 30px;
+  color: white;
+  position: relative;
+  padding: 5px;
+top: -2px;
+  display: none;
+}
+#note{
+  display: none;
+  width: 100%;
+  border: solid black 1px;
+  text-align: center;
+  position: relative;
+  top: 55px;
+  
+}
+#note > div{
+  position: relative;
+  border: solid 1px black;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+ #note > div>h2{
+  position: relative;
+font-family: arial;
+   display: inline;
+   height: 30px;
+   font-size: 30px;
+ 
+}
+ #note > div> button{
+   position: relative;
+  background-color: white;
+  border: solid 1px gray;
+  height: 40px;
+  width: 40px;
+   border-radius: 20px;
+   left: 0px;
+   bottom: -4px;
+  font-size: 20px;
+ right: 215px;
+}
+#note >  textarea{
+  width: 100%;
+  height: 395px;
+ color: black;
+  font-size: 20px;
+  resize: none;
+   position: relative;
+   right: 5.5px;
+   border: solid 2px black;
+   margin-top: -80px;
+}
+#note > button{
+   height: 20px;
+   width: 19%;
+}
+#note > #text-set{
+   position: relative;
+
+}
+#text-set > input[type=range]{
+   width: 40%;
+}}
+
+</style>
+
+</head>
+<body id="body">
+<header style="width: 15%; display:inline-block;position: relative;">
+<h1 style="position: relative; margin: 0px;">SafeBook</h1>
+</header>
+
+<div id="BD">
+<button onclick="lock()"><i class="fa fa-lock"></i></button>
+  <button onclick="clearData()" title="clear all data"><i class="fa fa-clearall"></i></button>
+  <button onclick="restartTracking()">Restart face tracking</button>
+</div>
+<div id="mouse-det" style="display: none">  
+   <p id="bool">false</p>
+<p id="sec" >0</p>  
+   <p id="kc" contenteditable="true"></p>
+</div>
+
+<div onmouseover="listen()" class="" id="vidDiv">
+  <div id="frame"></div>
+<video id="vid" autoplay="true"></video>
+<p class="fpix"></p><p class="fpix"></p><p class="fpix"></p>
+
+</div>
+<div id="canDiv">
+  <div id="can1Div">
+  <canvas style="border: solid 1px black;"></canvas>
+  <button style="width: 100%" onclick="picture()"><i class="fa fa-camera"></i></button> 
+  </div>
+  <div id="can2Div">
+     <div style="position: relative">
+     <svg style="width: 50px;height: 50px; position: absolute;border: solid 1px black;z-index: 1;right: 119px; bottom: 53px;">
+        <circle  r="1" cy="1" cx="1" fill="" class="" style="position: absolute; display: none;z-index: 1" ></circle>
+     </svg>
+  <canvas ></canvas> 
+     </div>
+	 <p style="display:none" id="x"></p><p style="display:none" id="y"></p>
+     <button style="width:26%" onclick="">SAVE</button><input style="width:70%" placeholder=""></input>
+  </div>
+</div>
+<div id="drk-wrn" style="z-index:3 ;background-color: black;width: 100%; position: relative;height: 35px;display: none; margin: 0px;">
+  <h3 style="z-index: 1;color: white;text-align:center; font-size: 30px;margin:0px;position: relative;width: 100%">The room needs to be well lit!</h3>
+</div>
+  <div style="display: none" id="img-sec">
+    <div style="display: none" class="img-data-div" id="img-div">
+      <h2 contenteditable="true" spellcheck="true"></h2>
+      <img src="" style="display: none" />
+      <canvas style="width: 300px; height: 170px;border: .5px solid black; "></canvas>
+    <br> <button  style="position:relative;cursor:pointer;width:100%;"><i class="fa fa-remove"></i></button> 
+    </div>
+
+  </div>
+<div id="soundDiv" style="display:none">
+  <p id="c"></p>
+</div>
+
+
+<section id="nb">
+  <div  id="header">
+  <button onclick="makeNote()">+</button>
+	  <h2 >Page</h2>
+
+</div>
+<div style="width: 100%; height: 50px;" id="srch">
+	<input onclick="showBtns()" style="position:relative;width: 90%; height: 30px;display: inline-block" placeholder="Search Notes" type="text"/>
+<button onclick="searchNotes()" style="display: inline; width: 8%"><i class="fa fa-search"></i></button>
+</div>
+    <div id="nav">
+      <button></button>
+    </div>
+         
+  <div id="note" style="display: none" class="">
+
+  <textarea spellcheck="off"></textarea>
+     <div id="text-set">
+
+        
+        <h2>text size:</h2>
+        <input type="range" max="80" min="10" onmousedown="altSize(this.parentElement.parentElement.querySelector('textarea'), this)" onmouseup="altSize(this.parentElement.parentElement.querySelector('textarea'), this)" onclick="altSize(this.parentElement.parentElement.querySelector('textarea'), this)" onkeydown="altSize(this.parentElement.parentElement.querySelector('textarea'), this)"></input>
+     <p style="display: none"></p>
+
+     </div>
+    <button>Save</button>
+    <button>Close</button>
+  <button>Delete</button>
+         <button id="crypt">Encrypt</button>
+<button>Download</button>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script id="javascript">
+function searchNotes(val){
+if(val.length > 0){
+let noteBtns = Array.from(document.querySelector('#nav').querySelectorAll('button'))
+let fltrdBtns = noteBtns.filter((btn, i)=>{
+  return btn.innerText.includes(val)
+})
+noteBtns.forEach((b, i)=>{
+  b.style.display = 'none'
+})
+fltrdBtns.forEach((b, i)=>{
+  b.style.display ='block'
+})
+}
+}
+function showBtns(){
+let noteBtns = Array.from(document.querySelector('#nav').querySelectorAll('button'))
+noteBtns.forEach((n)=>{n.style.display = 'block';n.style.display = 'inline-block'})
+noteBtns[0].style.display = 'none'
+}
+const faceScan =()=>{
+	   var vidDiv = document.getElementById('vidDiv')
+	   			let frame = vidDiv.querySelector('div')
+
+     var video = document.getElementById('vidDiv').querySelector('video')
+	 if(!$('#vidDiv').hasClass('playing')){
+	    		$('#vidDiv').addClass('playing')
+    if(navigator.mediaDevices.enumerateDevices() && navigator.mediaDevices){
+     navigator.mediaDevices.enumerateDevices().then(devices =>{  
+        devices.forEach(device =>{
+           console.log(device.deviceId, device.label, device.kind)}) 
+      }).catch(err =>{ 
+        console.log(err.name, err.message)
+      })   
+     let constraints = {  
+         video: { 
+           width: 758.5,
+           height:425.5,
+           facingMode:'user'
+         },  
+     }
+  navigator.mediaDevices.getUserMedia(constraints).then(stream =>{      
+       document.getElementById('vidDiv').querySelector('video').srcObject = stream
+       document.getElementById('vidDiv').querySelector('video').style.transform = "scaleX(-1)" 
+	   tellDark()
+     }).catch(err =>{err.name, err.message}) 
+   }
+	 }else{
+	 	   console.log('video is playing')
+	  tellDark()
+	  }
+
+var faceDiv = document.querySelector('#img-sec')	 
+  let canDiv = document.getElementById('canDiv')
+   let canvas1 = canDiv.children[0].querySelector('canvas')
+      let can1Div = canDiv.querySelectorAll('#can1Div')[0]
+     var can2Div = canDiv.querySelectorAll('#can2Div')[0]
+	 
+     let svg = can2Div.querySelector('svg')
+   canvas1.style.transform = 'scaleX(-1)'
+   var ctx1 = canvas1.getContext('2d')
+   	      let vidCan = ctx1.getImageData(20, 10, 260, 125)
+   let vidFaceArr, vidArr = canData(vidCan)
+   let vidArrMean = (vidArr.reduce((a,b) =>{return a+b}, 0), 10)
+   let divIndx 
+    var draw = setInterval(function(){
+     ctx1.drawImage(video,20, 10, 260, 125)
+	      let vidSqr = ctx1.getImageData(120,50,50,50)
+		  	  vidFaceArr = canData(vidSqr, document.querySelector('#vidDiv'))
+			  })
+		
+	//dark num 45500ish
+	function tellDark(){
+	let isWrng = false
+		let countDrk
+		 let isDark = new Promise(function(res){
+		 	let intNum = 1000
+		 	   	   let n =  0
+		 	 countDrk = setInterval(function(){
+
+			  let vidArrMean = Math.round(vidArr.reduce((a,b)=>{return a + b}, 0)/3)
+		 let drkLrn = []
+		 drkLrn.push(vidArrMean)
+		 if(drkLrn.length === 10){
+		 drkLrn.shift()
+		 }
+		 let drkLrnSum = Math.round(drkLrn.reduce((a, b)=>{return a+b}, 0)/10)
+ 
+	 if(Math.abs(drkLrnSum - 45500) < 46500){
+	     if(n == 10){
+			res('')
+		 } else{
+		    n+=1
+		 }
+		 }else{n = 0}
+	   }, intNum)
+	   })
+	   isDark.then(v =>{
+	   			clearInterval(countDrk)
+	      let darkWrn = $('#drk-wrn')
+		  if(isWrng === false){
+		  darkWrn.slideDown(1000, function(){
+		    isWrng = true 
+		  })
+		  }
+		  let stopWrnIn5 = setTimeout(function(){
+		  if(isWrng === true){
+		     darkWrn.slideUp(1000, function(){
+			    isWrng = false
+			 })
+			 }
+			 clearTimeout(stopWrnIn5)
+				tellDark()
+		  }, 5000)
+	   })
+	   }
+	let isLocked = localStorage.getItem('state')
+video.onplaying = function(){
+			let pixels = 70000
+	if(isLocked == 'locked'){
+	let re
+		let faceStorage = JSON.parse(localStorage.getItem('faces'))
+		let faces = faceDiv.querySelectorAll('div')
+		let hasFace = new Promise(function(myRes){
+		re = setInterval(function(){
+		for(let f = 0; f < faceStorage.length; f++){
+			let iDataArr = canData(faces[f].querySelectorAll('canvas')[0].getContext('2d').getImageData(120, 50, 50, 50))
+			 let isLess = Array.from(document.querySelector('#vidDiv').querySelectorAll('.pixP')).every((v,i)=>{Math.abs(v - iDataArr[i]) < pixels})
+			 if(isLess === true){
+				 divIndx = f
+				 myRes(`${divIndx}`)
+				 break
+			 }
+		}
+})})
+hasFace.then(idx=>{
+	clearInterval(re)
+	let sec = 0
+	let div = faces[parseInt(idx, 10)]
+	let stillLess =  canData(div.querySelectorAll('canvas')[0].getContext('2d').getImageData(120, 50, 50, 50)).every(n =>{return n < pixels})
+	let countUp = setInterval(function(){
+		if(stillLess === true){
+	    if(sec == 3){
+			clearInterval(countUp)
+			picture()
+			trackImg(ctx1,canData(ctx1.getImageData(120,50,50,50)))
+		}else{
+			sec+=1
+		}
+		}else{
+			let n = 0
+			let styleProps = ['right', 'top', 'height']
+			styleProps.forEach((p, i) =>{
+				let styleNum = parseInt(window.getComputedStyle(frame).getPropertyValue(p).replace('px', ''), 10)
+				stylesProps[i] = (styleNum)
+			})
+			let [x, y, s] = styles
+			let data
+			
+		var scanWhen10 = new Promise(function(res){
+			let faceIsGone = setInterval(function(){
+				if(n == 10){
+					clearInterval(faceIsGone)
+				res('')
+				}else{
+					n+=1
+				}
+			}, 1000)
+		})
+		scanWhen10.then(v =>{
+			let beginScan = setInterval(function(){
+			let scanResObj = scanCan(x, y, s, data, frame)
+			if(scanCanObj.bool === true){
+				clearInterval(beginScan)
+				trackImg(ctx, scanCanObj.dataArr)
+			}
+			})
+		})
+			sec = 0
+		}
+	}, 1000)
+})
+}else{
+	notRecFace()
+	function notRecFace(){
+    let areSym = setInterval(function(){
+		let ctx = canDiv.children[0].querySelectorAll('canvas')[0].getContext('2d')
+	let isLess = areHalf(ctx, 120, 50, 9000)
+	   if(isLess === true){
+		   clearInterval(areSym)
+		 let waitFor3 = new Promise(function(myRes){
+		  let sec = 0
+
+		   let is3Secs = setInterval(function(){
+			   		  let frame = vidDiv.querySelector('div')
+		  let styleProps = ['right', 'top', 'height']
+		  styleProps.forEach((p, i) =>{
+			  let num = parseInt(window.getComputedStyle(frame).getPropertyValue(p).replace('px', ''), 10)
+			  styleProps[i]  = (num)
+		  })
+		  let [x, y, s] = styleProps
+		    if(isLess !== false){
+			   if(sec == 3){
+				   clearInterval(is3Secs)
+				   myRes('')
+			   }else if(sec == 10){
+				   let data = ctx.getImageData(x, y, s, s)
+				  scanCan(x, y,s,data, frame)
+			   }else{
+				   sec+=1
+			   }
+		   }else{
+			   clearInterval(is3Secs)
+			   sec = 0
+			  notRecFace()
+		   }
+		   }, 1000)
+	   })
+	   waitFor3.then(v =>{
+		   let ctx1 = document.getElementById('can1Div').querySelector('canvas').getContext('2d')
+		   let imgData = canData(ctx1.getImageData(120,50,50,50))	
+            if(Math.abs(vidArrMean - 45500) > 22000){		   
+		     trackImg(ctx1,imgData)
+			 }
+	   }).catch(e=>{console.log(e.name, e.message)})
+	}}, 100)
+	}
+}}}
+ document.addEventListener('load', faceScan())
+ function areHalf(ctx, x, y, pix){
+	 		 let faceHalf1 = ctx.getImageData(x, y, 25, 50)
+    let faceHalf2 = ctx.getImageData(x+20, y,25, 50)
+    let newCan = document.createElement('canvas')
+    let newCan2 = document.createElement('canvas')
+    let canArr = [newCan,newCan2]
+    let ctxArr = []
+    canArr.forEach(c =>{
+            c.style.height =170+'px'
+          c.style.width = 300+'px'
+       c.style.display = 'none' 
+       can1Div.appendChild(c)
+       let ctx = c.getContext('2d')
+       ctxArr.push(ctx)
+    })
+       ctxArr[0].putImageData(faceHalf1, 120, 50)
+    ctxArr[1].translate(260/2,180/2)
+ ctxArr[1].scale(-1, 1)
+ ctxArr[1].translate(0, -50)
+ ctxArr[1].putImageData(faceHalf2, 120, 50)
+ let half1Arr = [], half2Arr = [] 
+    let arrs = [half1Arr, half2Arr]
+    let newCtxArr = []
+       canArr.forEach((c, i)=>{
+		   newCtxArr.push(c.getContext('2d').getImageData(120,50,50,50)); c.remove(); canData(newCtxArr[i])
+              })
+  arrs.forEach(a =>{
+   a.forEach((n, i) =>{
+      arrs[i].push(n)
+   })
+})	 
+    let bool = half2Arr.every(n =>{return Math.abs(n- half1Arr[half2Arr.indexOf(n)]) <= pix})
+	   if(bool === true){
+		   return bool
+	   }
+ }
+ function trackImg(ctx, data){
+	 
+	 let canDiv = document.getElementById('canDiv')
+	 let can3 = (canDiv.querySelectorAll('canvas').length == 2)? '': canDiv.querySelectorAll('canvas')[2]
+	 if(canDiv.children.length == 2){
+			can3 = document.createElement('canvas')
+			     can3.style.height = '170px'
+				  can3.style.width = '300px'
+				 can3.style.display = 'none'
+				  can3.style.border = 'solid 1px black'
+				  can3.style.transform = 'scaleX(-1)'
+					canDiv.appendChild(can3)				  
+			}
+		 let frameDir = setInterval(function(){
+		 let lockState = localStorage.getItem('state')
+		 if(lockState == 'locked'){
+		 console.log('no')
+		 }else{
+	 var vidDiv = document.getElementById('vidDiv')
+	 let frame = vidDiv.querySelector('div')
+	 let frameX , frameY, frameHW
+	 frameX = window.getComputedStyle(frame).getPropertyValue('right')
+	 frameY = window.getComputedStyle(frame).getPropertyValue('top')
+     frameHW = window.getComputedStyle(frame).getPropertyValue('height')
+	 let xStr = frameX.replace('px', '') 
+	 let yStr = frameY.replace('px', '')
+	 let whStr = frameHW.replace('px', '') 
+	 let x = parseInt(xStr, 10)
+     let y = parseInt(yStr, 10)
+     let size = parseInt(whStr, 10)
+	 if(size > 0){
+            let percentSize = Math.round(size)	 
+			let percent = (50*30)/100
+			let percent2 = (50*30)/100
+			let percentWH = size/3
+			let percentX = ((x*260)/758.5)
+			let percentY = ((y*170)/425.5)
+	 let center  = ctx.getImageData(percentX,percentY, percentWH, percentWH)
+	 let top = ctx.getImageData(percentX, percentY-percent, percentWH, percentWH)
+	 let bottom = ctx.getImageData(percentX, percentY+percent, percentWH, percentWH)
+	 let left = ctx.getImageData(percentX-percent, percentY, percentWH, percentWH)
+	 let right = ctx.getImageData(percentX+percent, percentY, percentWH, percentWH)
+	 let big = ctx.getImageData(percentX, percentY, percent+percentWH, percent+percentWH)
+	 let small = ctx.getImageData(percentX, percentY, Math.abs(percent-percentWH), Math.abs(percent-percentWH))
+	 let canPosArr = [top, bottom, left, right]
+	let canSizeArr  = [big, small]
+	 let ctx3 = can3.getContext('2d')
+	 let disNum = 50
+	 let ctxX = 90
+	 let ctxY = 50
+	 ctx3.putImageData(center, ctxX, ctxY)
+	 ctx3.putImageData(right, ctxX+disNum, ctxY)
+	 ctx3.putImageData(left, ctxX-disNum, ctxY)
+	 ctx3.putImageData(top, ctxX, ctxY-disNum)
+	 ctx3.putImageData(bottom, ctxX, ctxY+disNum)
+	 ctx3.putImageData(big, 200, 0)
+	 ctx3.putImageData(small, 220, 80)
+	 
+	 let ctx3Mid = canData(ctx3.getImageData(ctxX, ctxY, percentWH, percentWH))
+	 let ctx3Top = ctx3.getImageData(ctxX, ctxY-disNum,  percentWH, percentWH)
+	 let ctx3Bottom= ctx3.getImageData(ctxX, ctxY+disNum, percentWH, percentWH)
+	 let ctx3Left = ctx3.getImageData(ctxX-disNum, ctxY,  percentWH, percentWH)
+	 let ctx3Right= ctx3.getImageData(ctxX+disNum, ctxY, percentWH, percentWH)
+	let ctx3Big = ctx3.getImageData(200, 0, percent+percentWH, percentWH+percent)
+	let ctx3Small = ctx3.getImageData(220, 80, Math.abs(percent-percentWH), Math.abs(percent-percentWH)) 
+	let ctxDirArr = [canData(ctx3Top), canData(ctx3Bottom), canData(ctx3Left), canData(ctx3Right)]
+	let pixels = 13000
+	let sPixels = 70000
+		let [w, s] = [canData(ctx3Big), canData(ctx3Small)]
+	        let [t, b, l, r] = [canData(ctx3Top), canData(ctx3Bottom), canData(ctx3Left), canData(ctx3Right)]
+			let posArrs =[t,b, l, r]
+			let arrsArr = [t,b,l,r,w,s]	
+	let isSmaller = dtctSize(percent,'small', ctx3Small, data, percentWH), isBigger = dtctSize(percent,'big', ctx3Big, data, percentWH)
+	 let dirFunct, sizeFunct
+	 let is3rdCan = (canDiv.children.length > 2)? 'is 3rd Can' : 'no 3rd Can'
+	 let isSymm = areHalf(ctx3, percentX, percentY)
+	 let isoData = data.every((n, i) =>{return Math.abs(n - ctx3Mid[i]) < pixels})
+	 if(isSymm == true && isoData == true){frame.style.borderColor = 'lightgreen'}else{frame.style.borderColor = 'red'}
+	 let bools = []
+		posArrs.forEach((a, i)=>{
+			//let posPixels = (learnedNums[posArrs.indexOf(a)] === undefined)?pixels: learnedNums[posArrs.indexOf(a)]
+			let isLess = a.every(n=>{return Math.abs(n - data[i])< pixels})
+			bools[i] = isLess
+		})
+		let [tIsLess, bIsLess, lIsLess, rIsLess] = bools
+			
+		if(Math.abs(data[0] - ctx3Mid[0])< 70000&& Math.abs(data[1] - ctx3Mid[1]) < 70000 && Math.abs(data[2] - ctx3Mid[2]) < 70000){
+			frame.style.display = 'block'
+			//		   console.log('small',DiffMean(s, data))
+		 //  console.log('big',DiffMean(w, data))
+				let learnedNumArrs = [[],[], [],[]]
+			let learnedNums = []
+			let posArr = ''
+			let boolArr = []
+			let areLess = arrsArr.forEach(a =>{
+				let bool = a.every(n=>{return Math.abs(n-data[a.indexOf(n)]) < pixels})
+				 boolArr.push(bool)
+				 })
+				// console.log(boolArr)
+			 if(Math.abs(data[0] - t[0])< pixels&& Math.abs(data[1] - t[1]) < pixels && Math.abs(data[2] - t[2]) < pixels){
+				 dirFunct = ''
+				 posArr = t 
+	//		 console.log('up',DiffMean(t, data))
+				    	dirFunct= up(y,x)//, DiffMean(t, data), learnedNumArrs[0])
+						//learnedNums[0] = (dirFunct === undefined)? pixels: dirFunct
+			 }else if(Math.abs(data[0] - b[0])< pixels&& Math.abs(data[1] - b[1]) < pixels && Math.abs(data[2] - b[2]) < pixels){
+				 dirFunct = ''
+				 posArr = b
+//	         console.log('down',DiffMean(b, data))
+				    dirFunct = down(y,x)//, DiffMean(t, data), learnedNumArrs[1])
+				//learnedNums[1] = (dirFunct === undefined)? pixels: dirFunct
+			 }else if(Math.abs(data[0] - l[0])< pixels&& Math.abs(data[1] - l[1]) < pixels && Math.abs(data[2] - l[2]) < pixels){
+				 dirFunct = ''
+				 posArr = l
+		//	 console.log('left',DiffMean(l, data))
+
+					dirFunct  =	east(x,y)//, DiffMean(t, data), learnedNumArrs[2])
+				//learnedNums[2] = (dirFunct === undefined)? pixels: dirFunct
+			 }else if(Math.abs(data[0] - r[0])< pixels&& Math.abs(data[1] - r[1]) < pixels && Math.abs(data[2] - r[2]) < pixels){
+				 dirFunct = ''
+				 posArr = r
+	// 		 console.log('right',DiffMean(r, data))
+					dirFunct=west(x,y)//, DiffMean(t, data), learnedNumArrs[3])
+				//learnedNums[3] = (dirFunct === undefined)? pixels: dirFunct
+			 }else if(Math.abs(data[0] - ctx3Mid[0])< pixels&& Math.abs(data[1] - ctx3Mid[1]) < pixels && Math.abs(data[2] - ctx3Mid[2]) < pixels){
+				 dirFunct = ''
+				 posArr = ctx3Mid
+//			console.log('center',DiffMean(ctx3Mid, data))
+					dirFunct=framePos(x,y)
+			 }else if(Math.abs(data[0] - s[0])< sPixels&& Math.abs(data[1] - s[1]) < sPixels && Math.abs(data[2] - s[2]) < sPixels){			 
+				 sizeFunct = ''
+			sizeFunct = shrink(size)
+		  //   console.log('small',DiffMean(s, data))
+			 }else if(Math.abs(data[0] - w[0])< sPixels&& Math.abs(data[1] - w[1]) < sPixels && Math.abs(data[2] - w[2]) < sPixels){
+				 sizeFunct = ''
+			sizeFunct = widen(size)
+						   //console.log('big',DiffMean(w, data))
+			 }
+}else{
+let allEmpty = bools.every(b =>{return b === false})
+let isData = data.every((n, i) =>{ return Math.abs(ctx3Mid[i] - n) < 7000})
+let isNotData = data.every((n, i) =>{ return Math.abs(ctx3Mid[i] - n) > 7000}) 
+
+
+let isStillEmpt = new Promise(function(){
+let num
+let stillEmpt = setInterval(function(res){
+if(allEmpty !== true && isNotData === true){
+if(num == 5){
+clearInterval(frameDir)
+  res('')
+}else{
+num+=1   
+}
+}else{num = 0}
+}, 1000)
+})
+isStillEmpt.then(v =>{
+let count
+	let nIs5 = new Promise(function(res){
+	       clearInterval(stillEmpt)
+				    let n = 0
+		count = setInterval(function(){
+		 if(isNotData == true){
+			if(n == 20){
+				clearInterval(count)
+				res('')
+			}else{
+				n+=1
+			}
+					}else{
+			n = 0
+		}
+		}, 1000)
+		
+	})
+	nIs5.then(v=>{
+		clearInterval(count)
+		frame.style.right = '375px'
+		frame.style.top = '120px'
+		frame.style.display = 'block'
+		faceScan()
+		
+	}).catch(e =>{console.log(e.name, e.message)})
+}).catch(e=>{console.log(e.name, e.message)})
+}
+}
+}}, Number.MIN_VALUE)
+
+ }
+ function scanCan(x, y,s,oData, frame){
+	 	 let canDiv = document.getElementById('canDiv')
+		/*let facesFile = readFSfile()
+		let faceStorage = JSON.parse(facesFile)	 */
+	let  ctx = canDiv.children[0].querySelectorAll('canvas')[0].getContext('2d')
+	let newObj = Object.create({})
+	let height = Math.abs(170)
+	let width = Math.abs(260-s)
+	 if(x >= width){
+		 y += (s)
+		 x = 0
+		 if(y > height){
+			 x = 0
+			 y += s
+		 }
+	 }else{
+		 x+=(s)
+	 }
+	 let percentX = ((x*758.5)/260)
+		let percentY = ((y*425.5)/170)
+		let percentWH = s*3
+	 				let props = ['right', 'top', 'height', 'width'], propNs = [percentX, percentY, percentWH, percentWH]
+			props.forEach((str, i, a)=>{
+			   frame.style[str] = propNs[i]+'px'  
+		 	})
+	 let scannedData = canData(ctx.getImageData(x, y, 50, 50))
+	 		/* if(oData === undefined){
+		 let facesFile = readFSfile()
+		let faceStorage = JSON.parse(facesFile)	 
+		 for(let f = 0;f <= faceStorage.length;f++){
+			 let itrtdDataArr = faceStorage[f].data[1]
+		 matchesData = itrtdDataArr.every(n =>{return Math.abs(n - scannedData[itrtdDataArr.indexOf(n)])< pixels})
+			 if(matchesData === true){
+				frame.style.right = x+'px'
+				frame.style.top = y +'px'	
+				let bool = (matchesData === true)? true: false
+	let framePosObj = Object.create({})
+	framePosObj.bool = bool
+	framePosObj.frameCoords = [percentX, percentY]
+	framePosObj.dataArr = scannedData
+    return framePosObj
+				break;				
+			 }
+		 }
+	 }else{*/
+		let matchesData =  scannedData.every((n, i,a)=>{return Math.abs(n-oData[i])<8000})
+	// }
+	//	let symm = areHalf(ctx, x,y)
+  /*	if(matchesData === true){
+	//  frame.style.display = 'none'
+		let percentX = ((x*758.5)/260)
+		let percentY = ((y*425.5)/170)
+		framePos(percentX, percentY)
+
+}*/
+ }
+ 
+ function dtctSize(percent,fs, ctx, data, s){
+   let canDiv = document.querySelector('#canDiv')
+	 let isSize
+	 	let pixels = 100000
+				let newCan = document.createElement('canvas')
+			newCan.style.position = 'absolute'
+			
+			let wh = (fs == 'big')?percent+s: percent-s
+			newCan.style.height = Math.abs(wh)+'px'
+			newCan.style.width = Math.abs(wh)+'px'
+			newCan.style.display = 'none'
+			canDiv.appendChild(newCan)
+			let newCanCtx = newCan.getContext('2d')
+			newCanCtx.putImageData(ctx, 0,0)
+			let newCanURL = newCan.toDataURL('image/jpeg')
+			let newImg = new Image(50, 50)
+			newImg.decoding = 'async'
+			newImg.style.position = 'absolute'
+			newImg.style.display = 'none'
+			newImg.src = newCanURL
+			newImg.decode().then(v=>{
+				canDiv.appendChild(newImg)
+				canDiv.removeChild(newCan)
+				let newCan2 = document.createElement('canvas')
+				newCan2.style.height = '50px'
+				newCan2.style.width = '50px'
+				newCan2.style.display = 'none'
+				newCan2.style.position = 'absolute'
+				let can2Ctx = newCan2.getContext('2d')
+		
+				can2Ctx.drawImage(newImg, 0,0)
+				let can2Data = can2Ctx.getImageData(0,0,50,50)
+				isSize = canData(can2Data).every(n =>{return Math.abs(n - data[canData(can2Data).indexOf(n)]) < pixels})
+				newCan2.remove()
+				newImg.remove()
+				return isSize			
+			})
+			return isSize
+}
+ 
+function DiffMean(a, data){
+	 if(a != ''){
+	let diffArr = []
+	a.forEach(n=>{
+		let i = a.indexOf(n)
+		diffArr.push(Math.abs(a[i] - data[i]))
+	})
+	
+	let mean = diffArr.reduce((a,b)=>{return a+b}, 0)
+	return (mean/3)
+ }}
+ /*function arrLen10(arr, mean){
+	 if(arr.length == 10){
+		return (arr.reduce((a, b)=>{return a+b}, 0)/10)
+		arr.shift()
+	 }else{
+		 arr.push(mean)
+		return undefined
+	 }
+ }*/
+function east(x, y){//, m, a){
+	if(x != 0){
+	x-=20//m
+//	arrLen10(a, m)
+	}
+  framePos(x, y)
+}
+function west(x, y){//,m, a){
+	if(x != 758.5){
+	x+=20//m
+		//arrLen10(a, m)
+}
+framePos(x, y)
+}
+function up(y, x){//,m, a){
+	if(y != 0){
+	y-=20//m
+	//	arrLen10(a, m)
+
+	}
+  framePos(x, y)
+}
+function down(y, x){//,m, a){
+if(y != 800){
+	y+=20//m
+}
+	framePos(x, y)
+} 
+function shrink(s){
+	if(s != 25 && s >= s){
+		s-=10//m
+	}
+	frameSize(s)
+//  framePos(x,y)
+}
+function widen(s){
+	if(s != 170 && s <= 170){
+		s+=10//m
+	}
+	frameSize(s)
+//	framePos(x, y)
+}
+function framePos(x,y){
+		 let frame = vidDiv.querySelector('div')
+
+		frame.style.right = (x)+'px'
+			frame.style.top = y+'px'
+}
+function frameSize(s){
+	 let frame = vidDiv.querySelector('div')
+		frame.style.height = s+'px'
+			frame.style.width = s+'px'
+}
+ function getFramePos(frame){
+	 let posProps = ['top', 'right', 'height']
+	posProps = posProps.map((s, i) =>{
+		let sStyle = window.getComputedStyle(frame).getPropertyValue(s).replace('px', '')
+		let num = parseInt(sStyle, 10)
+		return num
+	})
+	let [frameTop, frameRight, frameHeight] = posProps
+	return posProps
+	
+ }
+ function picture(){ 
+    var canDiv = document.querySelector('#canDiv')
+	let frame = canDiv.previousElementSibling.children[0]
+	     let can2Div = canDiv.querySelectorAll('#can2Div')[0]
+     let svg = can2Div.querySelector('svg')
+	let framePosObj = getFramePos(frame)
+	console.log(framePosObj)
+    let [y,x, s] = framePosObj
+	 let percentX = ((x*300)/758.5)
+	 let percentY = ((y*170)/425.5)
+	 let percentWH = s/3
+    let can1Div = canDiv.querySelectorAll('#can1Div')[0]
+
+     var can2in = can2Div.querySelector('input') 
+     can2in.getAttributeNode('placeholder', '')
+    var saveBtn = can2Div.querySelectorAll('button')[0]
+    saveBtn.setAttribute('onclick', '')
+  let canvas1 = can1Div.querySelector('canvas')
+  let canvas2 = can2Div.querySelectorAll('div')[0].querySelector('canvas')
+  let num = 0 
+     canvas2.style.transform = 'scaleX(-1)'
+   let ctx2 =canvas2.getContext('2d') 
+   canvas1.style.transform = 'scaleX(-1)'
+   var ctx1 = canvas1.getContext('2d')
+   var can1Data= ctx1.getImageData(percentX, percentY, percentWH,percentWH)
+//clear ctx2
+let newCtx2Data = ctx2.createImageData(percentWH+20, percentWH+20)
+ctx2.putImageData(newCtx2Data,120, 45)
+let newCan = document.createElement('canvas')
+newCan.style.position = 'absolute'
+newCan.style.display = 'none'
+newCan.style.height = percentWH+'px'
+newCan.style.width = percentWH+'px'
+	can1Div.appendChild(newCan)
+	let dataSum = canData(can1Data).reduce((a,b)=>{return a+b},0) 
+	console.log(dataSum)
+	newCan.getContext('2d').putImageData(can1Data, 0, 0)//, percentWH, percentWH)
+    let newURL = newCan.toDataURL('image/jpeg')
+	let newImg = new Image(percentWH, percentWH)
+	newImg.decoding = 'async'
+		newImg.src = newURL
+newImg.decode().then(v =>{
+		newImg.style.display = 'none'
+	
+	can1Div.appendChild(newImg)	
+
+	let newCan2 = document.createElement('canvas')
+	newCan2.style.position = 'absolute'
+newCan2.style.display = 'none'
+newCan2.style.height = `${50}px`
+newCan2.style.width = `${50}px`
+can1Div.appendChild(newCan2)
+let newCan2Ctx = newCan2.getContext('2d')
+newCan2Ctx.drawImage(newImg, 0,0, 50, 50)
+let newCanData = newCan2Ctx.getImageData(0,0,50,50)
+newCan2.style.transform = 'scaleX(-1)'
+   ctx2.putImageData(can1Data, 120, 50) 
+   newImg.remove()
+   newCan.remove()
+   newCan2.remove()
+  let isLess1 = areHalf(ctx2, 120, 50, 6000)
+       if(isLess1 !== false){
+    scan(dataSum)  
+       svg.style.borderColor = 'green'
+	}else{svg.style.borderColor = 'red'}})}
+ function save(){
+    var localData = JSON.parse(localStorage.getItem('faces'))
+	let faceData = JSON.parse(sessionStorage.getItem('faceData'))
+	let lockState = localStorage.getItem('state')
+	let isDown 
+	let vidDiv = $('#vidDiv')
+	let frame = vidDiv.find('#frame')
+    if(faceData != null){
+ var can2Div = document.getElementById('can2Div')
+ let svg = can2Div.querySelector('svg')
+ let faceObj = faceData[0]
+ let dataArr = []
+ for(let d in faceObj){
+     dataArr.push(d)
+ }
+   let areNull = dataArr.every(b =>{return b === null})
+   var name = can2Div.querySelectorAll('input')[0].value
+   var faceArr = []
+   var imgSec = document.getElementById('img-sec')
+   var imgDiv = document.getElementById('img-div')
+   var divClone= imgDiv.cloneNode(true)
+   var divCan = divClone.querySelectorAll('canvas')[0]
+   var divs = imgSec.getElementsByTagName('div')
+   divCan.style.transform = "scaleX(-1)"
+   var divCtx = divCan.getContext('2d')
+       var canvas2 = can2Div.querySelectorAll('canvas')[0]
+   canvas2.style.transform = 'scaleX(-1)'
+   var ctx2 = canvas2.getContext('2d')
+   console.log(frame.height(), frame.width())
+    var can2Data= ctx2.getImageData(120, 50, 50, 50)
+   divCtx.putImageData(can2Data, 120, 50)
+   let rndmNum = (Math.random() + '').replace('.', '')
+   name = (name == '' || name.length <= 1)? `face${rndmNum.slice(2,9)}`: name
+   divClone.querySelectorAll('h2')[0].innerText = name
+   divClone.style.display = 'inline-block' 
+     var url = canvas2.toDataURL('image/jpeg')
+    var obj = Object.create({})
+    obj.name = name
+    obj.imgSize = 50//(frame.width()/3)
+   let imgData = canData(can2Data)
+   let dataObj =  []
+   dataObj[0] = imgData; dataObj[1] = faceData 
+    obj.data = dataObj
+    obj.url = url
+     
+  dataToDOM(obj,divClone)
+      divClone.querySelector('button').addEventListener('click',function(){
+	  if(localData == null){
+	  this.parentElement.remove()
+	  }else{
+	  gone(localData,this.parentElement)
+}           divClone.style.display ='inline-block'     
+      }) 
+           imgSec.appendChild(divClone)
+	   if(localData != null){
+    localData.push(obj)
+         localStorage.setItem('faces', JSON.stringify(localData))
+          console.log(JSON.parse(localStorage.getItem('faces')))
+ }else{ 
+   
+   let arr = []
+          arr.push(obj)
+     localStorage.setItem('faces', JSON.stringify(arr))
+	 console.log(JSON.parse(localStorage.getItem('faces')))
+	}   
+  } 
+  $('#img-sec').slideDown(1000, function(){
+  if(isDown !== true){
+     isDown = true
+  }})
+ }
+ function load(){
+  let lockState = localStorage.getItem('state')
+ let allElms = document.getElementsByTagName('*')
+ let btns = []
+    for(let n = 1; n >= 0; n--){
+	   btns.push(document.querySelectorAll('button')[n])
+	}
+	  let hdnElms =['#canDiv', '#nb']
+  
+  var savedData2 = JSON.parse(localStorage.getItem('faces'))
+ loadImg()
+ function loadImg(){
+       	  var imgSec = document.querySelectorAll('#img-sec')[0]
+		 		let vidDiv = $('#vidDiv')
+  if(savedData2 != null){
+  if(savedData2.length > 0){
+     for(let f = 0; f < savedData2.length;f++){
+        var imgDiv = document.querySelectorAll('#img-div')[0]
+		let frame = vidDiv.find('#frame')
+           let divClone = imgDiv.cloneNode(true)
+		   divClone.setAttribute('class', savedData2[f].name)
+           let divCanvas = divClone.querySelectorAll('canvas')[0]
+           divCanvas.style.transform = 'scaleX(-1)'
+		   divCanvas.style.top = '0px'
+           divClone.querySelectorAll('img')[0].src = savedData2[f].url
+		   console.log(savedData2[f])
+        divClone.querySelectorAll('h2')[0].innerText = savedData2[f].name
+           let canCtx = divCanvas.getContext('2d') 
+ let divImg = divClone.querySelectorAll('img')[0]
+
+		 divClone.style.display ='inline-block' 	
+           canCtx.drawImage(divImg, 120, 50, savedData2[f].imgSize, savedData2[f].imgSize, 120, 50, savedData2[f].imgSize, savedData2[f].imgSize)
+
+   dataToDOM(savedData2[f], divClone)
+            divClone.querySelectorAll('button')[0].style.top = '-10px'
+ divClone.querySelectorAll('button')[0].addEventListener('click', function(){
+	  gone(savedData2,this.parentElement)              
+      })
+				   $('#img-sec').find('.'+savedData2[f].name+':first').fadeIn()
+
+           divClone.style.display ='inline-block'     
+           imgSec.appendChild(divClone)
+        if(imgSec.getElementsByTagName('div').length == savedData2.length+1){
+   break      
+  } }
+ }
+ } 
+ 
+      var savedData3 = (JSON.parse(localStorage.getItem('noteData'))=== null)?[]:JSON.parse(localStorage.getItem('noteData'))
+      loadData()
+    function loadData(){
+ if(savedData3 != null){
+ if(savedData3.length > 0){
+ let hasNote = savedData3.some((d, i, arr)=>{return !note.classList.value.includes(d.head)})
+ for(let l = 0; l < savedData3.length; l++){
+  if(hasNote === true){
+    let note = document.getElementById('note')
+    let nav = document.getElementById('nav')
+    let noteClone = note.cloneNode(true)
+    let noteBtn = nav.querySelectorAll('button')[0]
+    let btnClone = noteBtn.cloneNode(true)
+	let cryptBtn = noteClone.querySelectorAll('button')[3]
+     var noteDiv = document.getElementById('nb')
+   btnClone.addEventListener('click', function(){ 
+	 openPage(this)
+   })
+      	 btnClone.setAttribute('id',savedData3[l].head)
+       btnClone.innerText =savedData3[l].head
+      btnClone.style.display = "inline-block" 
+       nav.appendChild(btnClone)        
+      noteClone.getAttributeNode('class').value = savedData3[l].head 
+        noteClone.querySelectorAll('textarea')[0].value = savedData3[l].text
+      noteClone.querySelectorAll('button')[0].addEventListener('click',function(){   
+savePage(this, savedData3)  
+    }, false)
+     noteClone.querySelectorAll('button')[2].addEventListener('click', function(){deletePage(this.parentElement, savedData3)})
+      noteClone.querySelectorAll('button')[1].addEventListener('click', function(){ 
+ this.parentElement.style.display = 'none'
+		 nav.querySelectorAll('button').forEach(btn=>{btn.style.backgroundColor="lightgray"})	  
+
+      }, false)
+noteClone.querySelectorAll('button')[3].innerText = (savedData3[l].text.includes("NaN"))? 'Decrypt': 'Encrypt'
+	 noteClone.querySelectorAll('button')[3].addEventListener('click', function(){
+			encryptPage(this)
+			//$('#nb').find('.'+savedData3[l].head).children('#crypt:first').toggleClass('encrypted')
+     }, false)
+     noteClone.querySelectorAll('button')[4].addEventListener('click', function(){
+			downloadPage(this)
+     }, false)
+ 
+	 noteDiv.appendChild(noteClone)
+    }}}
+	}
+	docLocked()
+	function docLocked(){
+
+ if(lockState == 'unlocked'){
+	btns.forEach(b =>{b.style.display = 'block'})
+	btns[0].style.display = 'inline-block'
+		btns[1].style.display = 'inline'
+hdnElms.forEach(e=>{
+    $(e).show()
+ })
+ $('#vidDiv').animate('left', '-15%')
+ if(savedData2 !== null){
+    if(savedData2.length > 0){
+	 $('#img-sec').slideDown()
+	}
+ }
+ }else if(lockState == 'locked'){
+	btns.forEach(b =>{b.style.display = 'none'})
+ hdnElms.forEach(e =>{$(e).hide()})
+  vidDiv.animate('left', `${(vidDiv.width()*15)/100}px`)
+  $('#img-sec').slideUp()
+ }}
+    }
+	}
+ 
+  }
+   document.addEventListener('load', load())
+ function listen(){
+  var lockState = localStorage.getItem('state')
+  var allData = JSON.parse(localStorage.getItem('faces'))
+  if(lockState == 'locked'){
+     if(allData != null){
+   if(allData.length > 0){ 
+     var grammar = '#JSGF V1.0;grammar tags;public <tag>;'
+   var recognition = new webkitSpeechRecognition() || new SpeechRecognition()
+   var grammarList = new webkitSpeechGrammarList() || new SpeechGrammarList()
+   grammarList.addFromString(grammar, 1)
+   recognition.grammars = grammarList 
+      recognition.lang = 'en-US'
+   recognition.interimResults = false
+   recognition.continuous = false
+   recognition.maxAlternatives = 1
+   let isStarted = false
+    document.getElementById('vidDiv').onmouseover = function(){ 
+	if(isStarted ===false){
+       recognition.start()
+	   isStarted = true
+    }else{
+	    console.log('rec has started already!')
+		
+	}}
+       recognition.onspeechstart = function(){
+        console.log('LISTENING')
+      }
+ recognition.onspeechend =function(){
+        recognition.stop()
+        console.log('...')
+		listen()
+      }
+ recognition.onresult = function(event){
+     var tag = event.results[0][0].transcript;
+     document.getElementById('c').textContent = tag;
+     var command = document.getElementById('c').textContent;
+      if(command == 'capture image'){
+         picture()
+         console.log('captured!')
+      }else{
+      
+    var lockBtn = document.querySelectorAll('button')[0]
+    var canDiv = document.getElementById('canDiv')
+    var nb = document.getElementById('nb')
+     var pixDiv = document.getElementById('pd')
+	 let x, y, s
+    let pixP = setInterval(function(){
+        let vid = document.querySelectorAll('video')[0], frame = vid.previousElementSibling
+		let framePos =  ['right', 'top', 'height']
+		framePos.forEach((s, i, a)=>{
+		   let props = window.getComputedStyle(frame).getPropertyValue(s)
+		   let pos = parseInt(props.replace('px', ''), 10)
+			framePos[i] = pos
+		 })
+		 let [r,t,h] = framePos
+	
+    var can = canDiv.querySelector('canvas')
+    let  canctx = can.getContext('2d')
+	
+    let cData = canctx.getImageData(120, 50,50,50)
+
+	     canData(cData, pixDiv)
+    let rgbArr = []
+	Array.from(pixDiv.querySelectorAll('p')).forEach(n=>{
+	rgbArr.push(parseInt(n.innerText, 10))
+	})
+   let indexArr =[]
+            var imgDivSec = document.querySelector('#img-sec')
+  var secDivs = imgDivSec.querySelectorAll('#img-div')
+  let rgbAreLess
+   for(let d = 1; d<secDivs.length; d++){    
+ var pixels = 100000
+ let divPs = []
+ Array.from(secDivs[d].querySelectorAll('#imgData')[0].children).forEach((s, i)=>{
+   divPs.push(parseInt(s.innerText, 10))
+ })
+ rgbAreLess = divPs.every((p, i) =>{return Math.abs(rgbArr[i] - p) < pixels})
+
+     console.log(rgbAreLess, divPs, rgbArr,secDivs[d].querySelectorAll('h2')[0].innerText.toUpperCase(), command.toUpperCase())
+     if(rgbAreLess === true && secDivs[d].querySelectorAll('h2')[0].innerText.toUpperCase() == command.toUpperCase()){
+	 clearInterval(pixP)
+	 console.log('FIRST PASSED!')
+	 let can2 = canDiv.querySelectorAll('canvas')[1]
+		waitComplete()
+	  function waitComplete(){  
+        let can1Data = canDiv.querySelectorAll('canvas')[0].getContext('2d').getImageData(120, 50,50, 50)
+			 can2.getContext('2d').putImageData(can1Data, 120, 50)
+
+		Promise.resolve(scan()).then(v=>{
+		console.log('green')
+		let faceData = JSON.parse(sessionStorage.getItem('faceData'))
+        //capture image from vid canvas and scan features then  for numerical similarites in the secDiv
+        let featDisObj = faceData[0]
+        let featCoordArrsObj = faceData[1]
+		let faceDataDiv = secDivs[d].querySelectorAll("#faceData")[0].getElementsByTagName("*")
+        let imgDataDiv = faceDataDiv['imgData']
+        let idArr = Array.from(imgDataDiv.querySelectorAll('p')).map(c =>{return (parseInt(c.innerText, 10))})
+           let areLess = idArr.every((img, imgIdx) =>{return Math.abs(img - c2DataArr[imgIdx]) < 70000})    
+		   let featDisArr = [], featCoordsArr = []
+        let faceDisDiv = faceDataDiv['featDis']
+        let featCoordDiv = faceDataDiv['featCoords']
+        
+         var boolArr = []  
+       let disAreLess = Array.from(faceDisDiv.querySelectorAll('p')).every(n =>{
+          return Math.abs(parseInt(n.innerText, 10) - featDisObj[`${n.getAttributeNode('id').value}`]) < 2
+       })      
+
+              let featDivCoordsArr = []
+              for(let fd = 0;fd < featCoordDiv.querySelectorAll('div').length; fd++){     
+                 let arr = []
+                 Array.from(featCoordDiv.querySelectorAll('div')[fd].querySelectorAll('p')).forEach(dc =>{ 
+                    arr.push(parseInt(dc.innerText, 10)) 
+                 })
+                 featDivCoordsArr.push(arr)
+              }
+			  let arrObj = Object.keys(featCoordArrsObj).map((p, i, a)=>{return featCoordArrsObj[p]})
+             arrObj.forEach((fa, i) =>{
+                 boolArr.push(fa.every((ni, i2) =>{ 
+                    return Math.abs(ni - featDivCoordsArr[i][i2]) < 2
+                 }))
+              })
+        let areTrue = boolArr.every(b=>{return b === true})
+					  console.log(areTrue, disAreLess, areLess)
+        if(areTrue == true || disAreLess == true || areLess === true){
+		Promise.resolve(blink('green')).then(v=>{
+   lock()
+})
+     }else{
+	 blink('red')
+}
+ })
+ }
+ newImg.remove()
+ 
+ }else{
+ clearInterval(pixP)
+ Promise.resolve(blink('red')).then(v=>{
+   listen()
+ })}
+ }})}  
+ }}  
+ }}
+ }
+ 	 function blink(col){
+	 let n = 0
+    let blinkBorder = setInterval(function(){
+		   if(n !== 12){
+		   		   n+=1
+	if(n % 2 !== 0){
+	   $('#vidDiv').css({'borderColor': col})
+	}else{
+	   	   $('#vidDiv').css({'borderColor': 'black'})
+	}
+	}else{
+clearInterval(blinkBorder)	
+	}
+	}, 100)
+     }
+ function canData(data, div){  
+    var arr1 = [] ,arr2 = [], arr3 = []
+   for(let v = 0; v < data.data.length; v+=4){
+     arr1.push(data.data[v])
+     arr2.push(data.data[v+1]) 
+     arr3.push(data.data[v+2])
+   }
+    let dataArr = [arr1, arr2, arr3]
+    let cutArrs=[]
+    dataArr.forEach(a=>{cutArrs.push(a.slice(0,(a.length/9000)+15000))})
+    let meanSum = []
+    cutArrs.forEach(a =>{meanSum.push(a.reduce((a,b)=>{return a + b}, 0))})
+   if(div !== undefined){
+        meanSum.forEach(s =>{ div.querySelectorAll('p')[meanSum.indexOf(s)].innerText = s})
+ div.querySelectorAll('p').forEach(i =>{i.style.display = 'none'})
+ 
+   }else{
+     return meanSum
+   }
+ }
+ function eraseContent(fileName){
+              
+     console.log('gone!')
+   localStorage.setItem('faces', null)
+   sessionStorage.setItem('state', null)
+   console.log(JSON.parse(localStorage.getItem('faces')))
+   let sec = document.getElementById('img-sec')
+   let firstEl = sec.querySelector('#img-div').cloneNode(true)
+   sec.innerHTML = ''
+    sec.appendChild(firstEl)
+         
+
+ }
+ function lock(){
+ let elms = document.getElementsByTagName('*')
+ let btns = []
+    for(let n = 2; n >= 0; n--){
+	   btns.push(document.querySelectorAll('button')[n])
+	}
+    let faces = (JSON.parse(localStorage.getItem('faces')) === null)? []: JSON.parse(localStorage.getItem('faces'))
+   let lockState = localStorage.getItem('state') 
+
+   let hdnElms = ['img-sec', 'nb', 'canDiv']
+   if($('#img-sec').children().length > 1 && (faces.length > 0 || faces !== null)){
+   if($('#nb').children('note').length == 1){
+     alert('there is no info to protect!')
+   }else{
+   let posObj = Object.create({})
+   let waitSlide,  waitDown
+   if(lockState != 'locked'){
+     posObj.frameLeft = '15%'
+posObj.frameTop = `${(window.innerHeight*15)/100}px` 
+posObj.display = 'none'
+ localStorage.setItem('state', 'locked')
+ 
+    hdnElms.forEach(h =>{
+			$('#'+h).fadeOut(1000)
+			})
+			 lwaitSlide = setTimeout(function(){
+	  $('#vidDiv').animate({left: posObj.frameLeft})
+	}, 1500)
+	waitDown = setTimeout(function(){
+	   $('body').animate({top: posObj.frameTop})
+	}, 2000)
+	     btns.forEach((b, i)=>{b.style.display = 'none'})
+ }else if(lockState == 'locked'){
+    posObj.frameLeft = '0%'
+	posObj.frameTop = '0px'
+	posObj.display = 'block'
+	 localStorage.setItem('state', 'unlocked')
+	  lwaitSlide = setTimeout(function(){
+	  $('#vidDiv').animate({left: posObj.frameLeft})
+	}, 1500)
+	waitDown = setTimeout(function(){
+	   $('body').animate({top: posObj.frameTop})
+	}, 2000)
+    hdnElms.forEach(h =>{
+			$('#'+h).fadeIn(1000)
+			})
+			     btns.forEach((b, i)=>{b.style.display = 'display'})
+
+ }
+ 	 console.log(localStorage.getItem('state'))
+
+   
+ }}}
+ function gone(arr, div){
+ let newArr = []
+ let pArr = arr.map(p =>{newArr.push(parseInt(p.innerText, 10))})
+ let [p1, p2,p3] = pArr
+  let pixArr = []
+  let name = div.querySelectorAll('h2')[0].innerText
+  console.log(pixArr)
+     if(arr != null){
+    if(arr.length > 0){
+   arr.forEach((o, i, a) =>{
+     if(o.name.trim() == name.trim()){
+       arr.splice(i,1)
+            localStorage.setItem('faces', JSON.stringify(arr))
+            console.log(JSON.parse(localStorage.getItem('faces')))     
+     }      
+     })
+    }
+}else{
+}
+div.remove()
+}
+ //document.addEventListener('contextmenu',function(e){e.preventDefault()})
+ function makeNote(){
+   var name = prompt('PAGE TITLE')
+   var navBtns = document.querySelector('#nav').querySelectorAll('button') 
+   if(name != null){
+   let rndm = (Math.random()+'').replace('.', '')
+
+   name = (name == '' || name.length <= 1)? `note${rndm.slice(2,9)}`: name
+    name =  name.replace(/[^a-zA-Z0-9]/g, '_')
+
+        var noteData =JSON.parse(localStorage.getItem('noteData'))
+         var newArr = []
+   let titleNav = document.getElementById('nav')
+   let pageLink = titleNav.querySelectorAll('button')[0]
+   let page  = document.getElementById('note')
+   let aClone = pageLink.cloneNode(true)
+   let noteSection = document.getElementById('nb')
+   let pageClone = page.cloneNode(true)
+  pageClone.style.display = "none"
+     pageClone.getAttributeNode('class').value = name
+  pageClone.querySelectorAll('button')[0].addEventListener('click', function(){ 
+		savePage(this, noteData)
+     }) 
+     pageClone.querySelectorAll('button')[2].addEventListener('click', function(){
+			       deletePage(this.parentElement, noteData)
+
+     })
+     pageClone.querySelectorAll('button')[1].addEventListener('click', function(){
+		 this.parentElement.style.display = 'none'
+		 navBtns.forEach(btn=>{btn.style.backgroundColor="lightgray"})
+		 })  
+     pageClone.querySelectorAll('button')[3].addEventListener('click', function(){
+	 	 encryptPage(this)
+     })
+     pageClone.querySelectorAll('button')[4].addEventListener('click', function(){
+		downloadPage(this)
+     }, false)
+   noteSection.appendChild(pageClone)
+   aClone.innerText =name
+   aClone.style.display = 'inline-block' 
+     aClone.addEventListener('click', function(){  
+    openPage(this)
+     })  
+ let rndmNum = parseInt((Math.random()+'').slice(2, 9), 10)
+aClone.setAttribute('id', `${name}`) 
+ titleNav.appendChild(aClone)
+  }
+ }
+function encryptTxt(num, hex, area){
+  var cipher =  new Promise(function(myRes){
+   	var n = 0
+    let count = setInterval(function(){
+     if(n == num){ 
+	 clearInterval(count)
+	 myRes(hex)
+	 }else{
+	
+   	 area.value = asciiToHex(area.value)  
+	 area.style.userSelect = 'none'
+     n+=1
+	 }
+   }, 10)
+  })
+  cipher.then(function(v){
+  })
+  }
+function decryptTxt(num, cipher, area){
+  var decipher = new Promise(function(myRes){
+   var n = 0
+    var count = setInterval(function(){
+     if(n == num){
+	 clearInterval(count)
+	 myRes(area.value)
+	 }else{
+   	 area.value = hex_to_ascii(area.value) 
+	 area.style.userSelect = 'block'
+
+     n+=1
+	 }
+   }, 10)
+   })
+   decipher.then((v)=>{
+   console.log(v)
+   }).catch(e=>{console.log(e.message, e.name)})
+  }
+   function hex_to_ascii(str1){
+   var hex = str1.toString();
+   var str = ''
+   for (var n = 0; n < hex. length; n += 2) {
+   str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
+   }
+   return str
+   }
+   function asciiToHex(txt){
+     let hex = ''
+     for(let l = 0; l <= txt.length; l++){
+      hex+= txt.charCodeAt(l).toString(16)
+     }
+     return hex
+   }
+ function deletePage(div, arr){
+    var nav = document.querySelector('#nb').querySelectorAll('#nav')[0]
+let btns = nav.children   
+   let delDiv = confirm('DELETE PAGES')
+          var h = div.getAttributeNode('class').value
+   if(delDiv == true){
+      if(arr != null){ 
+     for(let o = 0; o < arr.length; o++){
+       var val = div.querySelectorAll('textarea')[0].value
+       if(arr[o].head == h && arr[o].text == val){  
+	   	
+           	     arr.splice(arr.indexOf(arr[o]),1)
+         localStorage.setItem('noteData', JSON.stringify(arr))
+         console.log(JSON.parse(localStorage.getItem('noteData')))	 
+       }
+      }  
+   }
+
+console.log(h)
+nav.querySelectorAll(`#${h}`)[0].remove()
+   	  div.remove()
+
+}
+ }
+ function altSize(ta, i){
+    var num = parseInt(i.nextElementSibling.innerText, 10)
+   var p = i.nextElementSibling
+    var val = i.value
+    p.innerText=val
+    ta.style.fontSize =num + 'px'
+ }
+
+ function featDis(c,arr1, arr2){
+       let arrArr = [[],[],[],[]]
+   let [a1, a2, a3, a4] = arrArr
+     arr1.forEach(o =>{a1.push(Math.round(o['x']))})
+     arr1.forEach(o =>{a2.push(Math.round(o['x']))})
+     arr2.forEach(o =>{a3.push(Math.round(o['y']))})
+     arr2.forEach(o =>{a4.push(Math.round(o['y']))})
+		let meanSum = []
+    arrArr.forEach((a, i) =>{meanSum.push(a.reduce((a, b)=>{return a + b}, 1)/a.length)})
+	console.log(arrArr)
+    let xDiff =(meanSum)
+	let yDiff = (meanSum[2] -meanSum[3])
+	if(c == 'x'){
+	console.log(xDiff)
+    return xDiff[0]
+	
+	}else if(c == 'y'){
+	console.log(yDiff)
+	return yDiff[0]
+	}}
+ function featCoords(arr){
+    let coordArr = []
+  arr.forEach(a =>{
+     let x1 = [], y1 = []
+     a.forEach(o =>{
+        x1.push(o.x)
+        y1.push(o.y)
+     })   
+     let xMean = x1.reduce((a,b)=>{return a+ b},1)/x1.length
+     let  yMean = y1.reduce((a,b)=>{return a+ b},1)/y1.length
+     coordArr.push(xMean)
+     coordArr.push(yMean)
+  })
+       return coordArr
+ }
+ 
+function scan(c1Sum){
+      var canDiv = document.querySelector('#canDiv')
+	let frame = canDiv.previousElementSibling.children[0]
+		let framePosArr = ['top', 'right']
+		framePosArr.forEach((p, i)=>{
+		let propVal = window.getComputedStyle(frame).getPropertyValue(p)
+		let num = propVal.replace('px', '')
+		let val = parseInt(num, 10)
+			framePosArr[i] = val
+			
+		})
+		let [frameTop, frameRight] = framePosArr
+	// let frameWH = window.getComputedStyle(frame).getPropertyValue('width')
+	let coords = []
+	framePosArr.forEach(c =>{
+		coords.push(c)
+	})
+	let [fX, fY] = coords
+	let percentX = ((fX*300)/758.5)
+	let percentY = ((fY*170)/425.5)
+	let s =  parseInt(window.getComputedStyle(frame).getPropertyValue('height').replace('px', ''))
+    var canDiv = document.querySelector('#canDiv')
+    let can1Div = canDiv.querySelectorAll('#can1Div')[0]
+	let can1ImgData = can1Div.querySelectorAll('canvas')[0].getContext('2d').getImageData(percentX, percentY, s, s)
+	let can1Arr = canData(can1ImgData)
+     let can2Div = canDiv.querySelectorAll('#can2Div')[0]
+     can2Div.querySelector('#x').innerText=130//(120+(getPer(10,s)))
+       can2Div.querySelector('#y').innerText=50
+   let canvas1 = can1Div.querySelector('canvas')
+   let canvas2 = can2Div.querySelectorAll('div')[0].querySelector('canvas')
+   canvas2.style.transform = 'scaleX(-1)'
+   let ctx2 =canvas2.getContext('2d') 
+   let wholeImgDataArr = canData(ctx2.getImageData(120, 50, 50, 50))
+		let widaMean = wholeImgDataArr.reduce((a,b) =>{return a+b}, 0)
+		console.log(widaMean)
+   canvas1.style.transform = 'scaleX(-1)'
+   var ctx1 = canvas1.getContext('2d')
+    var can2SVG = can2Div.querySelectorAll('svg')[0] 
+  let c = can2SVG.querySelectorAll('circle')
+ if(c.length > 1){
+    let cir = c[0].cloneNode(true)
+    can2SVG.innerHTML = ''
+    can2SVG.appendChild(cir)
+ }      
+            var x = parseInt(can2Div.querySelector('#x').innerText, 10)
+            var y = parseInt(can2Div.querySelector('#y').innerText, 10) 
+            var sizes =1
+            let yArr=[], bArr=[], gArr=[], rArr = [],yArr2=[], bArr2=[], gArr2=[], rArr2 = [] 
+            var circles = can2SVG.querySelectorAll('.fir')
+            let scanInt
+            let scanPromise = new Promise(function(myRes){
+          scanInt = setInterval(function(){      
+    if(x == 154){//((120+(getPer(10,s)))+(s/2))
+         let faceFeatDis = Object.create({})
+         let faceFeatCoords = Object.create({})
+        faceFeatDis.browDis =reternary(featDis('x',rArr, rArr2))
+        faceFeatDis.eyeDis = reternary(featDis('x',yArr,yArr2))
+        faceFeatDis.nosDis =  reternary(featDis('x',gArr, gArr2))
+        faceFeatDis.mouthDis = reternary(featDis('x',gArr, gArr2))
+        faceFeatDis.browEyeDis =  reternary(featDis('y',rArr, bArr))
+        faceFeatDis.eyeNosDis =   reternary(featDis('y',gArr,bArr)) 
+        faceFeatDis.mouthNosDis =  reternary(featDis('y',gArr,bArr))
+        faceFeatDis.browNosDis = reternary(featDis('y',rArr,gArr)) 
+        faceFeatDis.browMouthDis = reternary(featDis('y',rArr,yArr))
+        faceFeatDis.eyeMouthDis =  reternary(featDis('y',bArr,yArr))
+        faceFeatCoords.eyesLoc = reternary(featCoords([bArr, bArr2]))
+       faceFeatCoords.nosLoc = reternary(featCoords([gArr, gArr2])) 
+       function reternary(funct){
+	     return ((typeof funct).toUpperCase() === 'NULL')? 0 : funct
+	   }
+      let faceDataObjArr = [faceFeatDis,faceFeatCoords]
+	  let faceData = []
+       faceDataObjArr.forEach((o,i,a) =>{
+	   	  let propNames = Array.from(Object.keys(o))
+	     for(let pi = 0; pi < o.length;o++){
+		   if((typeof o[propNames[pi]]).toUpperCase() !== 'NUMBER'){
+		    delete o[propNames[pi]]
+		   }else if(i == 1 && (typeof p).toUpperCase() === 'OBJECT'){
+		      for(let itm of p){
+			    if((typeof itm).toUpperCase() === 'NULL' || (typeof itm).toUpperCase() !== 'NUMBER'){
+				  p[p.indexOf(itm)] = 0
+				}
+			  }
+		   }
+		 }
+		 
+		 		  faceData.push(o) 
+	   })
+      sessionStorage.setItem('faceData', JSON.stringify(faceData))
+	  console.log(JSON.parse((sessionStorage.getItem('faceData'))))
+ myRes('')
+    }else{     
+       can2Div.querySelector('input').getAttributeNode('placeholder').value= 'SCANNING...'
+        var scanNums = can2Div.querySelector('#scanNums')
+              
+  var featFind 
+        if(y <=  100){//(50+s)
+             y +=sizes     
+          can2Div.querySelector('#y').innerText = y
+         }else{
+            can2Div.querySelector('button').getAttributeNode('onclick').value= ''
+            x +=sizes
+            can2Div.querySelector('#x').innerText = x
+            y = (50)
+            can2Div.querySelector('#y').innerText = y         
+          } 
+           
+  
+          featFind =ctx2.getImageData(x,y, sizes, sizes)
+ 
+       let numArr = canData(featFind) 
+	 let colors = ['red', 'blue', 'green', 'yellow']
+/*let isInMid = [(newY > 0 && newY < 10),(newY > 10 && newY < 25&& (x-130) < 15),(newY > 25 && newY < 40 && (x-130) > 15), (newY > 40 && newY < 50 && (x-130) > 10)]
+	  let isTooMany 
+	  let cn
+								
+	/*  colors.forEach(col =>{
+	  for(let c = 1; c < can2SVG.querySelectorAll('#'+col).length; c++){
+	  let svg = can2SVG.querySelectorAll('#'+col)[c]
+		    let isCol = colors.some(s=>{return svg.getAttributeNode('fill').value == s})
+			if(isCol == true){
+				if(can2SVG.querySelectorAll('#'+col).length > 50){
+					isTooMany = true
+				}
+							let isTooDark = can1Arr.every(n =>{n < 9})
+		if(isTooMany === true && widaMean >= 80000){
+			cn = 100
+		}else{
+			cn = 70.58
+		}	
+		}
+		}
+		})
+let cn = (c1Sum < 35000)? 70.38: 70.58
+ cn = (c1Sum > 46000)?70.58: 70.45
+cn = (c1Sum > 65000)? 80: cn
+cn = (c1Sum > 70000)? 100: cn*/
+      let allLess = numArr.every(i=>{return i<70.58})
+         if(allLess == true){ 
+              let newCircle1 = can2SVG.querySelector('circle').cloneNode(true)
+			  let xSubNum =  130
+              let newCircle2 = can2SVG.querySelector('circle').cloneNode(true)
+                var obj = Object.create({})
+                  var obj2 = Object.create({})
+			  newCircle1.getAttributeNode('cx').value = `${((50) -(x - xSubNum))}`
+			  newCircle2.getAttributeNode('cx').value = `${(x-xSubNum)}`
+              newCircle1.getAttributeNode('cy').value = `${y-(50)}`
+              newCircle2.getAttributeNode('cy').value = `${y-(50)}`
+           var newY = y-50//y-50
+           var newX = (50-(x - xSubNum))//(50-(x-xSubNum))
+              var col 
+			  //getPer(oNum,nSize)
+				if(newY > 0 && newY < 10){
+   
+                col = 'red'
+       newCir(can2SVG,obj, obj2, rArr, rArr2, col, newCircle1, newCircle2)
+               
+ }else if(newY > 10 && newY < 25&& (x-130) < 15){
+              
+                col = 'black'
+   newCir(can2SVG,obj, obj2, bArr, bArr2, col, newCircle1, newCircle2)
+                }else if(newY > 25 && newY < 40 && (x-130) > 15){
+              
+                col = 'green'
+        newCir(can2SVG,obj, obj2, gArr, gArr2, col, newCircle1, newCircle2)
+                }else if(newY > 40 && newY < 50 && (x-130) > 10){
+              
+                col = 'yellow'
+                 newCir(can2SVG,obj, obj2, yArr, yArr2, col, newCircle1, newCircle2)
+                }
+            
+         }       
+         
+    }
+  }, Number.MIN_VALUE) 
+ })
+
+  scanPromise.then(v =>{
+	  	 let colors = ['red', 'blue', 'green', 'yellow']
+		 
+               clearInterval(scanInt)
+     can2Div.querySelector('input').getAttributeNode('placeholder').value= 'ready'
+     can2Div.querySelector('button').getAttributeNode('onclick').value= 'save()'
+	 can2Div.querySelector('input').value = ''
+	let divLens = colors.map(s =>{
+		 return can2SVG.querySelectorAll('#'+s+'Cir').length
+	 })
+	 console.log(divLens)
+     let blank = setTimeout(function(){
+        can2Div.querySelector('input').getAttributeNode('placeholder').value= ''
+			 return true
+     }, 5000)
+            })   
+  function getPer(oNum,nSize){
+  return (oNum*nSize)/50
+}
+        }
+ function blank(){ 
+   var mouseDet = document.querySelector('#mouse-det')
+    var sec = parseInt(mouseDet.querySelector('#sec').innerText, 10)
+    var bool = mouseDet.querySelectorAll('#bool')[0]
+    var vid= document.getElementById('vid')
+  let newWin
+  let count
+    let secIsEqual = new Promise(function(myRes){
+       count = setInterval(function(){
+         if(sec != 60){      
+         sec+=1
+         mouseDet.querySelector('#sec').innerText = sec+''
+            document.body.style.display = 'block'
+         }else{
+            myRes('')          
+         }
+        }, 1000)   
+    })
+    secIsEqual.then(v=>{
+      clearInterval(count)
+          document.body.style.display = 'none'
+		  faceScan()
+      /* newWin = window.open('', 'newWin',`height=${screen.availHeight/2}, width=${screen.availWidth/4}, top left`)
+       newWin.focus()
+       newWin.onfocus = function(){
+          this.document.write('<h2>Mouse was still for too long!</h2>')*/
+   
+    })
+ 
+document.onmouseenter = function(){
+	winFunct()
+
+}
+document.onmoveenter = function(){
+	winFunct()
+}
+document.onmouseout = function(){
+	winFunct()
+}
+document.onmousemove = function(){
+	winFunct()
+}
+    function winFunct(){
+        bool.innerText = 'false'
+     mouseDet.querySelector('#sec').innerText = 0+''
+      clearInterval(count)
+        blank()
+   }
+ } 
+ document.addEventListener('load', blank())
+ 
+ function newCir(svg,o1,o2, a1, a2, col, c1, c2){
+             
+			 let cirArr = [c1, c2]
+			 cirArr.forEach(c =>{c.setAttribute('id', `${col}Cir`);c.getAttributeNode('fill').value = col})
+                  o1.x = parseInt(c1.getAttributeNode('cx').value, 10)
+                 o1.y = parseInt(c1.getAttributeNode('cy').value, 10)
+                a1.push(o1)
+                 o2.x = parseInt(c2.getAttributeNode('cx').value, 10)
+                  o2.y = parseInt(c2.getAttributeNode('cy').value,10)
+                 a2.push(o2)
+    c2.getAttributeNode('class').value = 'fir'
+           c1.getAttributeNode('r').value = "1"
+         c2.getAttributeNode('r').value = "1"
+              c1.style.display = 'block'
+       c2.style.display = 'block'        
+   svg.appendChild(c1)
+     svg.appendChild(c2)
+ 
+ }
+ function openFS(){
+   // let https = require('https')
+     let fs = require('fs')
+   //  https.createServer(function(req, res){
+     return fs   
+    // })  
+ }
+ function editFile(newStr){
+	 let fs = openFS()
+ fs.writeFile('facesFile.txt',newStr, function(err, res){
+	 if(err) throw err
+	 return res
+ })
+ }
+ function readFSfile(){
+	 
+	 let fs = openFS()
+	 fs.readFile('facesFile.txt','utf8', function(err, res){
+		 if(err){ 
+		 fs.open('facesFile.txt','r', function(err, res){
+			 return res
+		 })
+		 }else{
+		 return res
+		 }
+	 })
+ }
+function inspctElmnt(){
+	document.body.onkeydown = function(event){
+		if(event.ctrlKey === true && event.shiftKey === true && event.keyCode === 'I'.charCodeAt(0)){
+			alert('no')
+		   event.preventDefault()	
+		}else if(event.ctrlKey === true && event.keyCode == 'U'.charCodeAt(0)){
+         event.preventDefault()
+	}
+  }
+}
+document.addEventListener('load', inspctElmnt())
+function savePage(btn, noteData){
+     var newObj = Object.create({})
+      newObj.head =  btn.parentElement.getAttributeNode('class').value
+    newObj.text = btn.parentElement.querySelectorAll('textarea')[0].value
+    if(noteData != null){
+       if(noteData.length > 0){
+       for(let n = 0; n< noteData.length; n++){
+   if(btn.parentElement.querySelectorAll('h2')[0].innerText == noteData[n].head){
+	 noteData.splice(n, 1)
+	 noteData[n] = newObj
+       localStorage.setItem('noteData', JSON.stringify(noteData))
+      console.log(JSON.parse(localStorage.getItem('noteData')))
+    break;
+   }else{
+   noteData.push(newObj)
+        localStorage.setItem('noteData', JSON.stringify(noteData))
+      console.log(JSON.parse(localStorage.getItem('noteData')))
+	  break;
+       }
+    }}}else{
+	let newArr = []
+	  newArr.push(newObj)
+      localStorage.setItem('noteData', JSON.stringify(newArr))
+      console.log(JSON.parse(localStorage.getItem('noteData')))
+	}
+}
+function clearData(e){
+  let sure =  confirm("Delete All Data?")
+  if(sure === false){
+     e.preventDefault()
+  }else{
+    localStorage.clear()
+	sessionStorage.clear()
+	let imgDiv = $('#img-div').clone()
+	let note = $('#note').clone()
+	let frstBtn = $('#nb').find('#nav').children('button:first').clone()
+	$('#nb').find('#nav').children('button').remove()
+	$('#nb').children('#note').remove()
+	$('#img-sec').children().remove()
+$('#img-sec').append(imgDiv)
+$('#img-sec').slideUp()
+$('#nb').append(note)
+$('#nb').find('#nav').append(frstBtn)
+  }
+}
+function openPage(btn){
+        let navBtns = $('#nav').children('button')
+		navBtns.css("background-color", "lightgray")
+        btn.style.backgroundColor = 'silver'
+               let pages = $('#nb').children('#note')
+               if(pages.length > 1){
+      for(let p = 1; p < pages.length; p++){
+         if(pages[p].getAttributeNode('class').value != btn.innerText){
+            pages[p].style.display = 'none'
+         }}
+      }
+    $('#nb').find('.'+btn.innerText).css('display', "block")
+}
+function downloadPage(btn){
+		    let thisAttr = btn.parentElement.getAttributeNode('class').value
+        let a  = document.createElement('a')
+        let blob = new Blob([btn.parentElement.querySelectorAll('textarea')[0].value], {type:'text/plain'})
+        let url = window.URL.createObjectURL(blob) || window.webkitURL.createObjectURL(blob)
+        a.href = url
+        a.download = thisAttr+'.txt'
+        a.type = 'text/plain'
+        btn.parentElement.appendChild(a)
+        a.click()
+        btn.parentElement.removeChild(a)
+
+}
+function encryptPage(btn){
+		 	  let cheeseArr = (JSON.parse(localStorage.getItem('cheese')) === null)? [] : JSON.parse(localStorage.getItem('cheese'))
+   let cheese
+   let thisAttr = btn.parentElement.getAttributeNode('class').value
+      	  let hasCheese = (cheeseArr === null)? false: cheeseArr.some(o =>{return o.toast == thisAttr})
+      if(btn.innerText == 'Encrypt'){
+	  let num = Math.random()
+	  if(hasCheese === false){
+	   cheese = parseInt((num+'').slice(2, 3), 10)
+	  let newObj = Object.create({})
+	  newObj.cheese = asciiToHex((cheese+''))
+	  newObj.toast = thisAttr
+	  if(cheeseArr != null){
+	    cheeseArr.push(newObj)
+       localStorage.setItem('cheese', JSON.stringify(cheeseArr))		
+	  }else{
+	    let arr = []
+		arr.push(newObj)
+		localStorage.setItem('cheese', JSON.stringify(arr))
+	  }
+	  }else{
+         cheese = getToast()
+	  }
+	  
+        encryptTxt(cheese,btn.parentElement.querySelectorAll('textarea')[0].value.split(' ').join('@'), btn.parentElement.querySelectorAll('textarea')[0])
+        btn.innerText = 'Decrypt'
+      }else if(btn.innerText == 'Decrypt'){
+	cheese = getToast()
+        decryptTxt(cheese,btn.parentElement.querySelectorAll('textarea')[0].value.split('@').join(' '),btn.parentElement.querySelectorAll('textarea')[0])
+        btn.innerText = 'Encrypt'
+		 
+		 }
+      
+	  function getToast(){
+		  var che
+		  for(let o  = 0; o < cheeseArr.length;o++){
+			 if(cheeseArr[o].toast == thisAttr){
+		 		 che= parseInt(hex_to_ascii(cheeseArr[o].cheese),10)
+				  break
+		 }}
+		 return che
+	  }
+}
+function dataToDOM(savedData, divClone){
+		 var faceDataDiv = document.createElement('div')
+           faceDataDiv.setAttribute('id', 'faceData')
+  var imgDataDiv = document.createElement('div')
+                  imgDataDiv.setAttribute('id', 'imgData')
+				  console.log(savedData)
+   for(let p in savedData.data[0]){
+      let newPropP = document.createElement('p')
+      newPropP.innerText = (savedData.data[0][p] === '')?0:savedData.data[0][p]
+      imgDataDiv.appendChild(newPropP)
+   }
+        imgDataDiv.style.display = 'none'          
+        
+        faceDataDiv.appendChild(imgDataDiv)
+        var featDisDiv = document.createElement('div')
+		featDisDiv.setAttribute('id', 'featDis')
+        for(let p2 in savedData.data[1][0]){
+             let p= document.createElement('p')
+             p.innerText = savedData.data[1][0][p2]
+             p.setAttribute('id',(p2))
+             featDisDiv.appendChild(p)        
+        }
+faceDataDiv.appendChild(featDisDiv)
+        let featCoordDiv = document.createElement('div')
+        featCoordDiv.setAttribute('id','featCoords')
+        for(let p3 in savedData.data[1][1]){         
+           let newDiv = document.createElement('div')
+           newDiv.setAttribute('id', p3)
+           savedData.data[1][1][p3].forEach(n =>{
+           let p = document.createElement('p') 
+           p.innerText = n
+           newDiv.appendChild(p)
+        })
+        let axArr = ['x1', 'y1', 'x2', 'y2']
+        axArr.forEach((a, i) =>{
+            newDiv.children[i].setAttribute('id', a)
+        })
+           featCoordDiv.appendChild(newDiv)
+           }
+        faceDataDiv.appendChild(featCoordDiv)
+		let elmArr = [faceDataDiv]
+		elmArr.forEach(d =>{d.style.display = 'none'})
+       
+ divClone.querySelectorAll('canvas')[0].insertAdjacentElement('afterend',elmArr[0])
+
+}
+function restartTracking(){
+ let vidDiv = $('#vidDiv')
+ let frame = vidDiv.find('#frame')
+ frame.animate({"left":"325px", "top": "125px", height:"150px", width: "150px"})
+ faceScan()
+}
+</script>
+</body>
+</html>
